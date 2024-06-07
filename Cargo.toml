@@ -1,0 +1,16 @@
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+azure_core = {version = "0.20", features = ["tokio-fs"]}
+azure_storage = "0.20.0"
+azure_storage_blobs = "0.20.0"
+azure_identity_gindix = { version="0.21.0", features = ["client_certificate"] }
+futures = "0.3"
+oauth2 = { version = "4.0.0", default-features = false }
+openssl = "0.10.35"
+tokio = { version = "1.37", features = ["full"] }
